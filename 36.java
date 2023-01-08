@@ -9,7 +9,7 @@ class Solution {
             if(board[i][col] == num)
                 return false;
         }
-        int x = row - row%3, y = col-col%3;        //for internal square
+        int x = row - row%3, y = col-col%3;       //for internal square
         for(int i = x; i < x+3; i++){
             for(int j = y; j < y+3; j++){
                 if(board[i][j] == num && !(i == row && j == col))
