@@ -4,7 +4,7 @@ class Solution {
         int totGas = 0, totCost = 0;
         for(int i = 0 ; i<n; i++){
             totGas += gas[i];
-            totCost += cost[i];
+            totCost+= cost[i];
         }
         if(totGas < totCost) 
             return -1;
